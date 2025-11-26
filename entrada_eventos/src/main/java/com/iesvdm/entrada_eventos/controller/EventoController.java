@@ -2,6 +2,7 @@ package com.iesvdm.entrada_eventos.controller;
 
 import com.iesvdm.entrada_eventos.service.EventoService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 @SessionAttributes("evento")
 public class EventoController {
 
+    @Autowired
     private EventoService eventoService;
 
     @GetMapping("/comprar/paso1")
