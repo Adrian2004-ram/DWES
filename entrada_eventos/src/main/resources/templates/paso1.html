@@ -6,9 +6,36 @@
 </head>
 <body>
 
-<form method="post" th:action="">
+    <h1>Lista Evento</h1>
 
-</form>
+    <form method="post" th:action="@{/eventos/comprar/paso2}">
+
+        <fieldset>
+
+            <legend>Seleccione un evento:</legend>
+
+            <div th:each="evento: ${eventos}">
+
+                <input th:id="${evento.id}"
+                       type="radio"
+                       th:value="${evento.id}"
+                       name="id"
+                       th:checked="${eventoGet ne null and evento.id eq eventoGet.id}" required>
+
+                <label th:for="${evento.id}" th:text="${evento.nombre}"></label>
+
+            </div>
+
+        </fieldset>
+
+        <div>
+            <label for="cantidad">Cantidad de entradas:</label>
+            <input type="number" id="cantidad" name="compraEntrada" th:value="${numeroEntradas ?: ''}" min="1" required>
+        </div>
+
+        <button>Continuar</button>
+
+    </form>
 
 </body>
 </html>

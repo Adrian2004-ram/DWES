@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Builder
 public class Evento {
 
-    private Integer id;
+    private int id;
     private String nombre;
     private String descripcion;
     private LocalDateTime fechaHora;

@@ -14,11 +14,11 @@ import java.time.LocalDateTime;
 @Builder
 public class ComprarEntrada {
 
-    private Integer id;
-    private Integer eventoId;
+    private int id;
+    private int eventoId;
     private String nombreComprador;
     private String emailComprador;
-    private Integer numeroEntradas;
+    private int cantidadEntradas;
     private BigDecimal precioUnitario;
     private BigDecimal precioTotal;
     private LocalDateTime fechaCompra;
