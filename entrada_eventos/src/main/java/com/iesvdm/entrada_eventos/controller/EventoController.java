@@ -26,7 +26,7 @@ public class EventoController {
         var eventos = eventoService.getAll();
 
         model.addAttribute("eventos", eventos);
-        model.addAttribute("eventoGet", evento);
+        model.addAttribute("eventoBotonAnterior", evento);
         model.addAttribute("numeroEntradas", compraEntrada !=  null ? compraEntrada.getCantidadEntradas() : null);
 
         return "paso1";

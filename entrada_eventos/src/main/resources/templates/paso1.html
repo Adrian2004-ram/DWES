@@ -20,7 +20,7 @@
                        type="radio"
                        th:value="${evento.id}"
                        name="id"
-                       th:checked="${eventoGet ne null and evento.id eq eventoGet.id}" required>
+                       th:checked="${eventoBotonAnterior ne null and evento.id eq eventoBotonAnterior.id}" required>
 
                 <label th:for="${evento.id}" th:text="${evento.nombre}"></label>
 
