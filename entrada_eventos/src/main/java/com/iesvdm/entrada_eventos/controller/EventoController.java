@@ -40,7 +40,7 @@ public class EventoController {
 
         var eventoBds = eventoService.findById(postPaso2DTO.getId());
 
-        httpSession.setAttribute("evento", eventoBds); // Guardar el evento en la sesión -- Lo machaco
+      //  httpSession.setAttribute("evento", eventoBds); // Guardar el evento en la sesión -- Lo machaco
 
        // httpSession.setAttribute("compraEntrada", ComprarEntrada.builder()
         //        .cantidadEntradas(postPaso2DTO.getCantidadEntradas())
